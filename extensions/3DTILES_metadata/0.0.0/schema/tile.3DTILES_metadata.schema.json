@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Tile 3DTILES_metadata extension object",
+  "type": "object",
+  "description": "Extension object in each tile for storing metadata",
+  "properties": {
+    "tile": {
+      "type": "object",
+      "description": "Object describing metadata associated with this tile",
+      "additionalProperties": {
+        "$ref": "tile.3DTILES_metadata.tile.schema.json"
+      }
+    }
+  }
+}

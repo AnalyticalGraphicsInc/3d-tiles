@@ -7,6 +7,13 @@
     "tileset": {
       "$ref": "3DTILES_metadata.tileset.schema.json"
     },
+    "tile": {
+      "type": "object",
+      "description": "An object to reference a class and built-in properties to be used for tile metadata",
+      "additionalProperties": {
+        "$ref": "3DTILES_metadata.tile.schema.json"
+      }
+    },
     "classes": {
       "type": "object",
       "description": "A dictionary, where each key is a class ID and each value is an object defining the class.",

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Tile metadata object",
+  "type": "object",
+  "description": "An object to reference a class and built-in properties to be used for tile metadata",
+  "properties": {
+    "class": {
+      "type": "string",
+      "description": "The metadata class each tile in the tileset will conform to. The value must be a valid class declared in the `classes` dictionary."
+    },
+    "builtinProperties": {
+      "type": "array",
+      "description": "An array of additional built-in property names that each tile will have.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  }
+}
