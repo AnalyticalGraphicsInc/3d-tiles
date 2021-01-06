@@ -1,0 +1,104 @@
+{
+    "asset": {},
+    "extensions": {
+        "3DTILES_metadata": {
+            "additionalSemanticProperties": [
+                // a core Cesium namespace is always available, does not need to be listed here
+                "https://cesium.com/ionSemantics.json",
+                "https://example.com/customSemantics.json"
+            ],
+            "tile": {
+                "semanticPropertiesUsed": [
+                    "cesium:geometricError",
+                    "cesium:horizonOcclusionPoint",
+                    "cesium:minimumHeight",
+                    "cesium:tileSize",
+                    "cesium.ion:movable"
+                ],
+                "class": "tileScoped"
+            },
+            "classes": {
+                "tilesetScoped": {
+                    "properties": {
+                        "author": {
+                            "type": "STRING"
+                        },
+                        "year": {
+                            "type": "UINT32"
+                        }
+                    }
+                },
+                "tileScoped": {
+                    "properties": {
+                        "horizonOcclusionPoint": {
+                            "type": "ARRAY",
+                            "componentType": "FLOAT64",
+                            "componentCount": 3
+                        },
+                        "northSkirtIndices": {
+                            "type": "ARRAY",
+                            "componentType": "INT32"
+                        }
+                    }
+                }
+            },
+            "tileset": {
+                "semanticProperties": {
+
+                },
+                "class": "tilesetScoped",
+                "properties": {
+                    "author": "Cesium",
+                    "year": 2021
+                }
+            }
+        }
+    },
+    "root": {
+        "boundingVolume": {
+            "box": [
+                0, 0, 0,
+                1e10, 0, 0,
+                0, 1e10, 0,
+                0, 0, 1e10
+            ]
+        },
+        "refine": "REPLACE",
+        "geometricError": 1024,
+        "extensions": {
+            "3DTILES_metadata": {
+                "tile": {
+                    "builtinProperties": {
+                        "HORIZON_OCCLUSION_POINT": [0.0, 0.0, 0.0]
+                    },
+                    "properties": {
+                        "rand": true
+                    }
+                }
+            }
+        },
+        "children": [
+            {
+                "boundingVolume": {},
+                "geometricError": 512,
+                "content": {}, // no mimeType
+                "extensions": {
+                    "3DTILES_implicit_tiling": {
+                        "tilingScheme": "QUADTREE",
+                        "subtreeDepth": 7,
+                        "maximumDepth": 21,
+                        "subtrees": {
+                            "uri": "subtrees/${level}/${x}/${y}/subtree.json"
+                        },
+                        // Hm, should this go here or in the tile? though how to handle the mimeType?
+                        "content": {
+                            "mimeType": "model/gltf+json",
+                            "uri": "content/${level}/${x}/${y}.gltf"
+                        },
+                        "extensions": {}
+                    }
+                }
+            }
+        ]
+    }
+}

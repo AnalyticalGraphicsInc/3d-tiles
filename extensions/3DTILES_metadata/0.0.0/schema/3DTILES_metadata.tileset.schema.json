@@ -18,11 +18,8 @@
     },
     "properties": {
       "type": "object",
-      "description": "The dictionary of properties, based on the class, using the single instance shorthand",
-      "minProperties": 1,
-      "additionalProperties": {
-        "type": ["boolean", "number", "string", "null", "array"]
-      }
+      "description": "The dictionary of properties that conforms to the specified class.",
+      "allOf": [{"$ref": "propertiesDictionary.schema.json"}]
     },
     "extensions": {},
     "extras": {}

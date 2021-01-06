@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Properties Dictionary",
+  "type": "object",
+  "description": "A dictionary of property name to property values encoded in JSON using single-instance shorthand. Properties must match a property name defined in the relevant class, unless otherwise specified.",
+  "minProperties": 1,
+  "additionalProperties": {
+    "type": ["boolean", "number", "string", "null", "array"]
+  }
+}

@@ -6,19 +6,13 @@
   "properties": {
     "properties": {
       "type": "object",
-      "description": "The dictionary of properties, conforming to the tile metadata class. `properties` is required if and only if `tileset.extensions.3DTILES_metadata.tile.class` is defined. Properties are defined using the single instance shorthand",
-      "minProperties": 1,
-      "additionalProperties": {
-        "type": ["boolean", "number", "string", "null", "array"]
-      }
+      "description": "The dictionary of properties, conforming to the tile metadata class. `properties` is required if and only if `tileset.extensions.3DTILES_metadata.tile.class` is defined.",
+      "allOf": [{"$ref": "propertiesDictionary.schema.json"}]
     },
     "builtinProperties": {
       "type": "object",
-      "description": "A dictionary of properties, conforming to the additional properties listed in `tileset.extensions.3DTILES_metadata.tile.additionalProperties`. `additionalProperties` is required if and only if `tileset.extensions.3DTILES_metadata.tile.additionalProperties`. Additional properties are defined with the single instance shorthands",
-      "minProperties": 1,
-      "additionalProperties": {
-        "type": ["boolean", "number", "string", "null", "array"]
-      }
+      "description": "A dictionary of properties, conforming to the built-in properties listed in `tileset.extensions.3DTILES_metadata.tile.builtinProperties` rather than a class. `builtinProperties` is required if and only if `tileset.extensions.3DTILES_metadata.tile.builtinProperties`.",
+      "allOf": [{"$ref": "propertiesDictionary.schema.json"}]
     }
   }
 }
