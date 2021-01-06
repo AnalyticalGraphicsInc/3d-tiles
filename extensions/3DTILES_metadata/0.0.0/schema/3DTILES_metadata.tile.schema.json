@@ -10,7 +10,7 @@
     },
     "builtinProperties": {
       "type": "array",
-      "description": "An array of additional built-in property names that each tile will have.",
+      "description": "An array of additional built-in property names that each tile will have. The README provides a list of valid built-in properties",
       "items": {
         "type": "string"
       },
