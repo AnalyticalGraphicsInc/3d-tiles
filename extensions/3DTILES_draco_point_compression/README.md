@@ -16,7 +16,7 @@
 
 ## Overview
 
-This extension adds [Draco geometry compression](https://github.com/google/draco) to the [Point Cloud](../../specification/TileFormats/PointCloud/README.md) tile format to support streaming compressed point data.
+This extension adds [Draco geometry compression](https://github.com/google/draco) to the [Point Cloud](../../specification/TileFormats/PointCloud) tile format to support streaming compressed point data.
 
 Draco compresses common properties such as position, color, and normal, as well as generic metadata such as intensity or classification.
 
@@ -26,7 +26,7 @@ This extension is based on [Draco bitstream version 2.2](https://google.github.i
 
 ### Feature Table
 
-The Feature Table of a [Point Cloud](../../specification/TileFormats/PointCloud/README.md) tile may be extended to include a `3DTILES_draco_point_compression` object. This object defines
+The Feature Table of a [Point Cloud](../../specification/TileFormats/PointCloud) tile may be extended to include a `3DTILES_draco_point_compression` object. This object defines
 the compressed properties and the location of the compressed data in the Feature Table binary.
 
 Below is an example of a Feature Table with the Draco extension set:
@@ -142,7 +142,7 @@ case `POINT_CLOUD_SEQUENTIAL_ENCODING` should not be applied.
 _This section is non-normative._
 
 * [Draco Open Source Library](https://github.com/google/draco)
-* [Cesium Draco Decoder Implementation](https://github.com/CesiumGS/cesium/blob/master/Source/Workers/decodeDraco.js)
+* [Cesium Draco Decoder Implementation](https://github.com/CesiumGS/cesium/blob/main/Source/Workers/decodeDraco.js)
 
 ## Property reference
 

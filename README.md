@@ -40,8 +40,8 @@ Please provide spec feedback by [submitting issues](https://github.com/CesiumGS/
 | :--- | :--- |
 | [Cesium ion](https://cesium.com/ion/) | Sign up for an account to to upload and convert content to 3D Tiles. Supports: <ul><li>glTF (.gltf, .glb)</li><li>CityGML (.citygml, .xml, .gml)</li><li>KML/COLLADA (.kml, .kmz)</li><li>LASer (.las, .laz)</li><li>COLLADA (.dae)</li><li>Wavefront OBJ (.obj)</li></ul> |
 | [CesiumJS](https://cesium.com/cesiumjs/) | Open source JavaScript runtime engine for visualizing 3D Tiles |
-| [3D Tiles Validator](https://github.com/CesiumGS/3d-tiles-validator/tree/master/validator) | Open source Node.js library and command-line tools for validating 3D Tiles |
-| [3D Tiles Samples](https://github.com/CesiumGS/3d-tiles-validator/tree/master/samples-generator) | Open source command-line tools for generating sample 3D Tiles  |
+| [3D Tiles Validator](https://github.com/CesiumGS/3d-tiles-validator/tree/main/validator) | Open source Node.js library and command-line tools for validating 3D Tiles |
+| [3D Tiles Samples](https://github.com/CesiumGS/3d-tiles-validator/tree/main/samples-generator) | Open source command-line tools for generating sample 3D Tiles  |
 | [Safe FME](https://hub.safe.com/packages/safe/cesiumion) | Desktop application for transforming data. The `CesiumIonConnector` converts data to 3D Tiles via Cesium ion. |
 | [Bentley ContextCapture](https://www.bentley.com/en/products/product-line/reality-modeling-software/contextcapture) | Desktop application for converting photographs and/or point clouds to 3D Tiles. |
 
@@ -57,7 +57,7 @@ This guide augments the fully detailed 3D Tiles specification with coverage of k
 
 ## Future Work
 
-Additional tile formats are under development, including Vector Data (`vctr`) [[#124](https://github.com/CesiumGS/3d-tiles/tree/vctr/TileFormats/VectorData)] for geospatial features such as points, lines, and polygons.
+Additional tile formats are under development, including Vector Data (`vctr`) [[#124](https://github.com/CesiumGS/3d-tiles/tree/3d-tiles-next/TileFormats/VectorData)] for geospatial features such as points, lines, and polygons.
 
 See the full roadmap issue for plans post version 1.0 [[#309](https://github.com/CesiumGS/3d-tiles/issues/309)], as well as issues marked as **3D Tiles [Next](https://github.com/CesiumGS/3d-tiles/issues?q=is%3Aissue+is%3Aopen+label%3Anext)**.
 
